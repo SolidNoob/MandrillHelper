@@ -4,18 +4,18 @@
 
 <p>Exemple d'utilisation:</p>
 
-<pre>
+```php
 include "Mandrill.php";
  
 $mail = new Mandrill();
  
-// Destinataire principal (le deuxiÃ¨me paramÃ¨tre est optionnel)
+// Destinataire principal (le deuxième paramètre est optionnel)
 $mail->to('toto@yopmail.com', 'Toto');
  
 // Les copies (optionnel)
 $mail->cc('cc@yopmail.com')->bcc('bcc@yopmail.com');
  
-// L'expediteur (optionnel) : par dÃ©faut la valeur de Mandrill::$default_from
+// L'expediteur (optionnel) : par défaut la valeur de Mandrill::$default_from
 $mail->from('from@yopmail.com', 'From');
  
 // Le contenu en html
@@ -31,6 +31,6 @@ if(!$mail->send())
 {
     echo "Une erreur s'est produite";
 }else{
-    echo 'Mail envoyÃ©' ;
+    echo 'Mail envoyé' ;
 }
-</pre>
+```
