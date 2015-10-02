@@ -1,8 +1,6 @@
 <h1>MandrillHelper</h1>
 <p>Une class Helper pour simplifier l'utilisation de l'API Mandrill.</p>
 
-<br/>
-
 <p>Exemple d'utilisation:</p>
 
 ```php
